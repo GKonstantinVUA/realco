@@ -3815,7 +3815,7 @@
             const headerRow2 = document.getElementById("header-downblock");
             header.style.height = headerRow2.offsetHeight + "px";
             updateContentPadding();
-        }), 500);
+        }), 0);
     }));
     window["FLS"] = false;
     menuInit();
