@@ -3797,26 +3797,6 @@
             }), 6e3);
         }));
     }));
-    function updateContentPadding() {
-        const header = document.getElementById("header");
-        const content = document.getElementById("content");
-        content.style.paddingTop = header.offsetHeight + "px";
-    }
-    document.addEventListener("DOMContentLoaded", (function() {
-        updateContentPadding();
-    }));
-    document.getElementById("close-button").addEventListener("click", (function() {
-        const headerRow1 = document.getElementById("header-upblock");
-        headerRow1.style.opacity = "0";
-        headerRow1.style.height = "0";
-        setTimeout((function() {
-            headerRow1.style.display = "none";
-            const header = document.getElementById("header");
-            const headerRow2 = document.getElementById("header-downblock");
-            header.style.height = headerRow2.offsetHeight + "px";
-            updateContentPadding();
-        }), 0);
-    }));
     window["FLS"] = false;
     menuInit();
     spollers();
