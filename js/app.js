@@ -3608,7 +3608,7 @@
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
-                //!За необхідності регулування кількосттю пагінаційних елементів
+
                 dynamicBullets: true,
                 dynamicMainBullets: 1
             },
@@ -3741,11 +3741,11 @@
             itemsToShowOnClick: 2
         } ];
         const itemArea = document.querySelectorAll(".flat-card__box");
- //!комырка зі слайдом
+
                 const showMoreBtn = document.querySelector(".container__viewall-link");
- //!кнопкак для розгортання
+
                 const container = document.querySelector(".flat-card");
- //! внутрішня обготка зі слайдами без урахування зовнішньої обгортки в якій знаходитьс //#кнопка для розгортання
+
                 if (!container || !showMoreBtn || itemArea.length === 0) return;
         function getItemsToShow(width) {
             for (const bp of breakpoints) if (width >= bp.width) return bp.itemsToShow;
